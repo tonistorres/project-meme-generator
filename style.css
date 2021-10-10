@@ -3,3 +3,27 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: rgb(232, 244, 241);
+  font-family: sans-serif;
+}
+
+#main {
+  background-color: orangered;
+  text-align: center;
+}
+
+#meme-image-container {
+  background-color: palevioletred;
+}
+
+h1,
+h2 {
+  font-family: Epilogue, Verdana, sans-serif;
+}
+
+#meme-text {
+  position: absolute;
+  z-index: 1;
+}
