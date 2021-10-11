@@ -25,6 +25,11 @@ body {
   text-shadow: 5px 5px 5px black;
   font-size: 30px;
   color: white;
+  max-width: 350px;
+  word-wrap: break-word;
+  margin: 0;
+  bottom: 0;
+  text-align: center;
 }
 
 #meme-image-container {
@@ -32,21 +37,44 @@ body {
   background-color: white;
   width: 350px;
   height: 250px;
+  position: relative;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 #fire {
-  background-color: red
+  background-color: red;
+  font-size: 20px;
+  border-radius: 5px 5px;
+  color: white;
 }
 
 #water {
-  background-color: blue
+  background-color: blue;
+  font-size: 20px;
+  border-radius: 5px 5px;
+  color: white;
 }
 
 #earth {
-  background-color: green
+  background-color: green;
+  font-size: 20px;
+  border-radius: 5px 5px;
+  color: white;
 }
 
 header h1 {
   margin: 0;
   padding: 10px;
+}
+
+#other-memes * {
+  display: inline-block;
+  width: 80px;
+  height: 50px;
+  border: 1px solid black;
+}
+
+#other-memes {
+  margin-top: 10px;
 }

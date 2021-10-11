@@ -19,6 +19,10 @@ const getContainer = document.getElementById('meme-image-container');
 
 const getStyleButton = document.getElementById('style-button').children;
 
+const getOtherMemes = document.getElementById('other-memes').children;
+
+const getImageElement = document.getElementById('meme-image');
+
 // criando um escutador para o campo input
 getInputText.addEventListener('input', () => {
   // Criada uma constante que recebe do DOM por meio de
@@ -45,9 +49,9 @@ function showImage() {
 // será setado e atribuido ao elemento src com id meme-image
 getMemeInsert.addEventListener('change', showImage);
 
-function showingTextInsideDiv() {
-  const text = document.getElementById('meme-text');
-}
+// function showingTextInsideDiv() {
+//   const text = document.getElementById('meme-text');
+// }
 
 function styleFire() {
   getContainer.style.border = '3px dashed red';
@@ -66,3 +70,11 @@ function styleEarth() {
 }
 
 getStyleButton[2].addEventListener('click', styleEarth);
+
+function getMeme(event) {
+  getImageElement.src = event.target.src;
+}
+
+for (let i = 0; i < getOtherMemes.length; i += 1) {
+  getOtherMemes[i].addEventListener('click', getMeme);
+}
