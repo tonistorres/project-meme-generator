@@ -15,6 +15,10 @@ const getMemeInsert = document.querySelector('#meme-insert');
 // a referência do elemento img
 const getMemeImage = document.querySelector('#meme-image');
 
+const getContainer = document.getElementById('meme-image-container');
+
+const getStyleButton = document.getElementById('style-button').children;
+
 // criando um escutador para o campo input
 getInputText.addEventListener('input', () => {
   // Criada uma constante que recebe do DOM por meio de
@@ -40,3 +44,25 @@ function showImage() {
 // do tip change e passamos a função showImage com o arquivo que 
 // será setado e atribuido ao elemento src com id meme-image
 getMemeInsert.addEventListener('change', showImage);
+
+function showingTextInsideDiv() {
+  const text = document.getElementById('meme-text');
+}
+
+function styleFire() {
+  getContainer.style.border = '3px dashed red';
+}
+
+getStyleButton[0].addEventListener('click', styleFire);
+
+function styleWater() {
+  getContainer.style.border = '5px double blue';
+}
+
+getStyleButton[1].addEventListener('click', styleWater);
+
+function styleEarth() {
+  getContainer.style.border = '6px groove green';
+}
+
+getStyleButton[2].addEventListener('click', styleEarth);

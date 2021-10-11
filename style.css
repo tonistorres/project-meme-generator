@@ -1,7 +1,23 @@
-#main {
-  background-color: orangered;
+body * {
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
+
+#main {
+  padding-top: 10px;
+  background-color: snow;
+  width: 700px;
+  position: relative;
+  top: 100px;
+  padding-bottom: 10px;
+  border-radius: 0 0 5px 5px;
+}
+
+body {
+  background-color: lightblue;
+}
+
 
 #meme-text {
   position: absolute;
@@ -28,4 +44,9 @@
 
 #earth {
   background-color: green
+}
+
+header h1 {
+  margin: 0;
+  padding: 10px;
 }
