@@ -6,35 +6,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meme Generator</title>
+    <!--Aqui fazemos a importação do noss arquivo externo style.css nossa folha de estilo -->
     <link rel="stylesheet" href="style.css" />
 </head>
+<!--Nesse ponto inicia o corpo do documento-->
 
 <body>
 
+    <!--Criando uma tag Principal main onde conterá todo 
+    os outro elemento da página a ser criada ela não foi pedida mais achei interessate 
+    a criação dessa tag para da um valor semântico para página html 
+    -->
     <main id="main">
+        <!-- Aqui temos uma tag do tipo input que irá conter o texto digitado pelo 
+        usuário e que por meio do atributo maxlength fixará um limite ao tamanho do 
+        texto que o usuário pode inserir. [Atendendo ao Requesito 5]
+        -->
         <input id="text-input" type="text" maxlength="60"><br>
         <!-- ref: https://www.w3schools.com/tags/tag_input.asp -->
         <input type="file" id="meme-insert"><br>
+        <!--Neste ponto estamos criando um sub-container dentro de main -->
         <div id="meme-image-container">
+            <!--O texto digitado em input acima descrito será refletido nessa span-->
             <span id="meme-text"></span>
+            <!--A imagem selecionada pelo usuário será refletida nessa tag img
+            vale apenas ressaltar duas propriedades interessante dentro dessa 
+            tag comprimento width e altura height mais a frente será combinada 
+            esses tamanho ao css. Ambos deverão bater para definir um tamanho 
+            proporcional do tamanho da foto.
+            -->
             <img id="meme-image" width="350" height="250">
         </div>
-
+        <!--Essa div foi cirada para comportar os três botões que irão colocar estilo de borda 
+        na no container principal onde conterá a foto seleciona no caso dos memes ou escolhida 
+        no pc no caso de acessar por meio do botão file para setar uma foto no pc -->
         <div id="style-button">
             <button id="fire">Fogo</button>
             <button id="water">Água</button>
             <button id="earth">Terra</button>
         </div>
+        <!--Essa div comportará os 04(quatro) Memes que serão utilizados com exercicio desse projeto-->
         <div id="other-memes">
-            <img id="meme-1" src="imgs/meme1.png" alt="Faustão">
-            <img id="meme-2" src="imgs/meme2.png" alt="Menina com nojo">
-            <img id="meme-3" src="imgs/meme3.png" alt="Seu Madruga">
-            <img id="meme-4" src="imgs/meme4.png" alt="Vin Diesel">
-          </div>
+            <img id="meme-1" src="imgs/meme1.png" alt="Faustão" width="80" height="50">
+            <img id="meme-2" src="imgs/meme2.png" alt="Menina com nojo" width="80" height="50">
+            <img id="meme-3" src="imgs/meme3.png" alt="Seu Madruga" width="80" height="50">
+            <img id="meme-4" src="imgs/meme4.png" alt="Vin Diesel" width="80" height="50">
+        </div>
     </main>
-
-
+    <!--A qui fazemos a importação do nosso arquivo externo sript.js-->
     <script src="script.js"></script>
 </body>
-
 </html>

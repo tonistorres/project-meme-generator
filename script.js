@@ -34,7 +34,7 @@ getInputText.addEventListener('input', () => {
   // pelo usuario no campo input
   gettextMeme.innerText = getInputText.value;
 });
-// Contribuição: Gabriel Pinheiro
+
 // Criada uma função chamada showImage()
 function showImage() {
   // Neste ponto fazemos uso da constante getMemeImage e acessamos
@@ -45,13 +45,9 @@ function showImage() {
   getMemeImage.src = URL.createObjectURL(getMemeInsert.files[0]);
 }
 // agora criamos um evento escutador para a constante getMemeInsert
-// do tip change e passamos a função showImage com o arquivo que 
-// será setado e atribuido ao elemento src com id meme-image
+// do tip change e passamos a função showImage com o arquivo que
+// sserá setado e atribuido ao elemento src com id meme-image
 getMemeInsert.addEventListener('change', showImage);
-
-// function showingTextInsideDiv() {
-//   const text = document.getElementById('meme-text');
-// }
 
 function styleFire() {
   getContainer.style.border = '3px dashed red';
