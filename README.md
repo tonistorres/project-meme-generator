@@ -1,5 +1,5 @@
 ![](/meme-generator.gif)
-## Módulo Fundamentos: Projeto Pixels-Art.
+## Módulo Fundamentos: Projeto Meme Generator.
 
 ## Habilidades:
 - [x] - Manipulação do DOM, JavaScript e css;
